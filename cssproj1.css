@@ -1,6 +1,6 @@
-
 h1 {
     font-family: sans-serif;
+    padding-left: 10px;
 }
 
 .topnav{
@@ -23,13 +23,18 @@ h1 {
 }
 
 .topnav a.active{
-    background-color: #4CAF50;
+    background-color: orange;
     color: white;
 }
 .icon {
     background-color: black;
 }
 img {
-    width: 10%;
+    width: 15%;
 }
-
+label{
+    padding-left: 5px;
+}
+input{
+    margin: 5px;
+}
