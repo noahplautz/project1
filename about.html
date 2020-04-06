@@ -19,7 +19,7 @@
             <li><a href="index.html" style="text-decoration: none;">Home</a></li>
             <li><a href="pricing.html" style="text-decoration: none;">Pricing/Rates</a></li>
             <li><a href="background.html" style="text-decoration: none;">Background Info</a></li>
-            <li><a class="active" href="about.html" text-decoration: none;">About Us</a></li>
+            <li><a class="active" href="about.html" style="text-decoration: none;">About Us</a></li>
             <li><a href="contact.html" style="text-decoration: none;">Contact Us</a></li>
         </ul>
     </nav>
@@ -31,9 +31,59 @@
         that people have given us about our work. We take great pride in the work that
         we do and the importance of the customers to help grow our business.
     </p>
-    <img src="IMG_1381.JPG" alt="example work">
-    <img src="IMG_1382.JPG" alt="example work" class="rotateimage">
+   
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="IMG_1381.JPG" alt="example work">
+            <div class="text">Caption text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="IMG_1382.JPG" alt="example work" class="rotateimage">
+            <div class="text">Caption text</div>
+        </div>  
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="IMG_1384.JPG" alt="example work" class="rotateimage">
+            <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="IMG_1411.jpg" alt="finished engine">
+            <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="IMG_1412.jpg" alt="finished engine">
+            <div class="text">Caption text</div>
+        </div>
+
+
+        <div class="prevnextbutton">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    </div>
+    <br>
+
+    <!-- The dots/cirlces -->
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    
+    <!-- <img src="IMG_1382.JPG" alt="example work" class="rotateimage">
     <img src="IMG_1384.JPG" alt="example work" class="rotateimage">
+    <img src="IMG_1411.jpg" alt="finished engine">
+    <img src="IMG_1412.jpg" alt="finished engine" > -->
 </body>
 
 </html>
