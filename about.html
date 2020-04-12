@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="cssproj1.css">
-<script defer src="java.js"></script>
-<link rel="icon" href="logo2.png" type="png">
-<img src="logo2.png" alt="logo">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="cssproj1.css">
+    <script defer src="java.js"></script>
+    <link rel="icon" href="picslogos\logo2.png" type="png">
+    <img src="picslogos\logo2.png"  class="logo" alt="logo">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
 <header>
     <h1>Tim's Small Engine Repair</h1>
 
@@ -26,40 +31,44 @@
 </header>
 
 <body>
-    <p>
-        This started in the garage and has slowly grown from the great reviews
-        that people have given us about our work. We take great pride in the work that
-        we do and the importance of the customers to help grow our business.
+    <div class="info">
+
+    
+    <p >The most recent project that was finished was the rebuilding of an snowmobile engine.  One of the pistons inside the block cracked and wasn't allowing 
+        any spark from the spark plug.  This is a prime example of making sure that there are fluids in the engine. The top of the engine needed to come off in order to reach the 
+        pistons.  This job took about 24 hours to complete.  
     </p>
-   
+
     <div class="slideshow-container">
-        
+
         <div class="mySlides fade">
             <div class="numbertext">1 / 5</div>
-            <img src="IMG_1381.JPG" alt="example work">
-            <div class="text">Caption text</div>
+            <img src="picslogos\broken piston.jpg" alt="cracked and broken pistons">
+            <div class="text">One of the pistons inside the engine was totally destroyed and needed to be replaced</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 5</div>
-            <img src="IMG_1382.JPG" alt="example work" class="rotateimage">
-            <div class="text">Caption text</div>
-        </div>  
+            <img src="picslogos\hoodopenengout.jpg" alt="engine out and hood open">
+            <div class="text">The next step was to take the entire engine out of the front of the snowmobile.</div>
+        </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 5</div>
-            <img src="IMG_1384.JPG" alt="example work" class="rotateimage">
-            <div class="text">Caption text</div>
+            <img src="picslogos\putting elctromag.jpg" alt="put the lower engine block back in and working on pistons">
+            <div class="text">We were putting the engine back together which needed
+                great technical skill and patience.
+            </div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">4 / 5</div>
-            <img src="IMG_1411.jpg" alt="finished engine">
-            <div class="text">Caption text</div>
+            <img src="picslogos\completeright.jpg" alt="finished engine right">
+            <div class="text">The engine is back together after mulitple days worth of work</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">5 / 5</div>
-            <img src="IMG_1412.jpg" alt="finished engine">
-            <div class="text">Caption text</div>
+            <img src="picslogos\completeleft.jpg" alt="finished engine left">
+            <div class="text">This is from the other side of the engine</div>
         </div>
 
 
@@ -67,23 +76,20 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        
+
     </div>
     <br>
 
     <!-- The dots/cirlces -->
-    <div style="text-align: center;">
+    <div style="text-align: left; padding-left: 8em; padding-bottom: 2em;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    
-    <!-- <img src="IMG_1382.JPG" alt="example work" class="rotateimage">
-    <img src="IMG_1384.JPG" alt="example work" class="rotateimage">
-    <img src="IMG_1411.jpg" alt="finished engine">
-    <img src="IMG_1412.jpg" alt="finished engine" > -->
+
+    </div>
 </body>
 
 </html>

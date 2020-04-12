@@ -1,47 +1,15 @@
-/* h1 {
-    font-family: sans-serif;
-    padding-left: 10px;
-
-}
-
-.topnav{
-    background-color: #333;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active{
-    background-color: orange;
-    color: white;
-}
-.icon {
-    background-color: black;
-}
-*/
 label{
     padding-left: 5px;
 }
 input{
     margin: 5px;
-} 
-.rotateimage {
-    transform: rotate(90deg);
+}
+
+.engine {
+    object-fit: contain;
 }
 img {
-    width: 20%;
+    width: 18%;
 }
 h1{
     display: none;
@@ -54,12 +22,11 @@ nav>ul {
     flex-direction: row;
     justify-content: space-between;
     background-color: #333;
-
 }
 
 nav>ul>li {
     color: white;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     padding: .7em;
 }
 
@@ -67,14 +34,14 @@ nav>ul>li:hover {
     background-color: gray;
 }
 
-nav>ul>li:active, a.active {
+nav>ul>li:active, #navigation a.active {
     color: orange;
 }
 #navigation a.active {
     padding: inherit;
     
 }
-a {
+#navigation a {
     color: white;
     text-decoration: none;
     padding: inherit;
@@ -88,26 +55,78 @@ a {
     justify-content: center;
 }
 
-body p {
-    font-size: 18pt;
+.info {
+    background-color: orange;
 }
 
- /* * {
-    box-sizing: auto;
-} */
+body p {
+    font-size: 16pt;
+    /* padding-bottom: 2em; */
+}
+
+body p a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.form {
+    background-color: orange;
+    padding-bottom: 3em;
+    font-size: 14pt;
+}
+.form p, .name, .email, .subject, .message, .info p {
+    margin-top: 0;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;    
+}
+.message label {
+    display: inline-block;
+}
+.name input, .email input, .subject input, .message textarea {
+    width: 40%;
+}
+.name input {
+    margin-left: 2.em;
+    
+}
+.email input {
+    margin-left: 2.8em;
+}
+.subject input {
+    margin-left: 2.1em;
+}
+.message textarea {
+    margin-top: -1.2em;
+    margin-left: 7.5em;
+    display: block;
+}
+.required {
+    color: red;
+}
+.submit {
+    margin-left: 10.3em;
+    margin-top: 2em;
+}
 
 .slideshow-container {
-    max-width: auto;
+    max-width: 22.5em;
     position: relative;
     margin: inherit;
 }
 
 .mySlides {
     display: none;
+    margin-left: 2.8em;
 
 }
 .mySlides>img {
-    height: 1;
+    /* height: 30em; */
+    width: 100%;
+    /* width: auto; */
+    object-fit: contain;
 }
 .prev, .next {
     cursor: pointer;
@@ -118,15 +137,20 @@ body p {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    margin-top: -1em;
   }
 /* Position the "next button" to the right */
 .next {
     right: 0;
+    position: absolute;
     border-radius: 3px 0 0 3px;
+}
+.prev {
+    margin-left: 2.65em;
 }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -136,13 +160,15 @@ body p {
   
   /* Caption text */
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    color: red;
+    font-family: sans-serif;
+    font-size: 14pt;
+    padding: 8px;
+    padding-right: 0px;
     position: absolute;
     bottom: 8px;
-    width: 100%;
-    text-align: center;
+    width: 85%;
+    text-align: left;
   }
   
   /* Number text (1/3 etc) */
@@ -164,6 +190,7 @@ body p {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    justify-content: left;
   }
   
   .dot.active, .dot:hover {
@@ -189,7 +216,7 @@ body p {
   }
 
 @media (max-width: 641px) {
-    img {
+    .logo {
         display: none;
     }
     header {
@@ -211,6 +238,7 @@ body p {
         padding: 10px;
         color: white;
         font-size: 2em;
+        font-family: 'PT Sans', sans-serif;
     }
     #menu-button {
         display: flex;
@@ -237,12 +265,28 @@ body p {
     body {
         padding-top: 60px;
     }
-}
+    .next {
+        margin-right: 3.7em;
+    }
+    .text, .numbertext, .dot {
+        display: none;
+    }
+    .slideshow-container {
+        margin-top: 1em;
+    }
+    .mySlides img {
+        width: 80%;
+    }
+ }
 
 @media(max-width: 440px) {
     h1 {
         padding: 10px;
         color: white;
         font-size: 1.5em;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .mySlides>img, .next, .prev, .text, .numbertext, .dot {
+        display: none;
     }
 }
