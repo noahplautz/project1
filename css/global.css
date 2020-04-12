@@ -32,7 +32,7 @@ nav>ul>li:hover {
 }
 
 nav>ul>li:active, #navigation a.active {
-  color: orange;
+  color: #ff9400;
 }
 #navigation a.active {
   padding: inherit;
@@ -45,7 +45,7 @@ nav>ul>li:active, #navigation a.active {
 }
 
 .info {
-  background-color: orange;
+  background-color: #ff9400;
 }
 body p {
   font-size: 16pt;
