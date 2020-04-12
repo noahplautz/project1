@@ -1,0 +1,41 @@
+.form {
+  background-color: orange;
+  padding-bottom: 3em;
+  font-size: 14pt;
+}
+.form p, .name, .email, .subject, .message, .info p {
+  margin-top: 0;
+  padding-top: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;    
+}
+.message label {
+  display: inline-block;
+}
+.name input, .email input, .subject input, .message textarea {
+  width: 40%;
+}
+.name input {
+  margin-left: 2.5em;
+  
+}
+.email input {
+  margin-left: 2.8em;
+}
+.subject input {
+  margin-left: 2.1em;
+}
+.message textarea {
+  margin-top: -1.2em;
+  margin-left: 7.5em;
+  display: block;
+}
+.required {
+  color: red;
+}
+.submit {
+  margin-left: 10.3em;
+  margin-top: 2em;
+}

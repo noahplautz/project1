@@ -1,0 +1,9 @@
+body p a {
+  text-decoration: underline;
+  color: blue;
+}
+.info img {
+  width: 18%;
+  border: 2px solid gray;
+  margin: 1em;
+}
